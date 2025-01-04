@@ -1,5 +1,6 @@
 # awstidy
- A CLI tool designed to efficiently understand, organize, and manage AWS resources.
+A CLI tool designed to efficiently understand, organize, and manage AWS resources.
+
 ## 要件
 
 ### 機能要件
@@ -10,8 +11,7 @@
 2. **ARN情報の取得**
     - 指定したリソースのARNを一覧表示。
 3. **リソース削除**
-    - 削除候補リソースの提案。
-    - 確認後、指定リソースを削除。
+    - 対象リソースの確認後、指定リソースを削除。
 4. **インフラ設定**
     - 必要なIAMロール・ポリシーのIaCによる自動デプロイ。
 5. **認証**
@@ -32,40 +32,26 @@
 1. **リソース一覧の取得**
     
     ```bash
-    
     awstidy list-resources --format csv --output resources.csv
-    
     ```
     
 2. **ARNリストの出力**
     
     ```bash
-    
     awstidy list-arns --resource-type ec2
-    
     ```
     
-3. **削除候補の確認**
-    
-    ```bash
-    awstidy suggest-deletion --output candidates.json
-    
-    ```
-    
-4. **リソース削除**
+3. **リソース削除**
     
     ```bash
     awstidy delete-resource --arn <resource-arn>
-    
     ```
     
-5. **IAMロールの自動作成**
+4. **IAMロールの自動作成**
     
     ```bash
     awstidy setup-iam
-    
     ```
-    
 
 ---
 
