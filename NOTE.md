@@ -13,6 +13,7 @@ AWSリソース管理において、既存ツールには以下の課題が存�
 以下は既存ツールの例で、それぞれの特徴や利用方法が異なりますが、課題を解決するための設計思想に影響を与えました：
 - **[AWSweeper](https://github.com/jckuester/awsweeper)**:
     - AWSアカウント内のリソースをクリーンアップするツール。290以上のリソースタイプに対応し、YAMLファイルでフィルタを設定してリソースの削除を行います。
+    - モジュール化構成（APP、API、WEB）を採用。
 - **[aws-auto-cleanup](https://github.com/mlevit/aws-auto-cleanup)**:
     - ユーザー定義の許可リストとTTL（Time To Live）設定に基づいて、不要なAWSリソースを自動削除。モジュール化構成（APP、API、WEB）を採用。
 - **[aws-account-cleanup](https://github.com/HemanthGangula/aws-account-cleanup)**:
